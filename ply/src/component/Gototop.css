@@ -1,0 +1,21 @@
+#top-btn
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #98AFC7;
+    border: solid 2px #abb8c3;
+  }
+  #top-btn:hover
+  {
+    background-color: #BEBEBE;
+    }

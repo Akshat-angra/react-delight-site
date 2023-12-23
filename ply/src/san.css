@@ -1,0 +1,73 @@
+    h4 {
+        display: flex;
+        flex-direction: row;
+        font-family: Bradley Hand ITC, cursive;
+        /* Correct the font family */
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 1.5vw;
+        color: #2f154c;
+    }
+
+    h4:before,
+    h4:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 3px solid #6674cc;
+        margin: auto;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    #btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vw;
+        border: solid 2px #2f154c;
+    }
+
+    .text {
+        border: solid 7vw transparent;
+    }
+
+    .para {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .para1 {
+        padding-top: 15px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+    }
+
+    .strong {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .pie {
+        color: #6674cc;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h4 {
+    font-size: 20px;
+  }
+} 

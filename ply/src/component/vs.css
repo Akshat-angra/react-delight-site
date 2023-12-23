@@ -1,0 +1,128 @@
+.container {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.home22-intro {
+    text-align: center;
+    width: 100%;
+}
+
+.home22-intro h1 {
+    padding: 30px 30px;
+    color: #2f154c;
+}
+
+.vs1 {
+    color: #6674cc;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    display: block;
+    border-radius: 50%;
+}
+
+.container::before {
+    background: #1BA94C;
+    box-shadow: 0 0 1000px 350px #1BA94C;
+    top: 0;
+    left: 0;
+    transform: translate(-80%, -80%);
+    border-radius: 50%;
+    right: 0;
+    top: 100%;
+    opacity: .2;
+}
+
+.container::after {
+    background: #6E6BFE;
+    box-shadow: 0 0 1000px 350px #6E6BFE;
+    top: 0;
+    right: 0;
+    transform: translate(-80%, -80%);
+    border-radius: 50%;
+    right: 0;
+    top: 100%;
+    opacity: .2;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 5px 5px 20px 5px;
+    color: #6E6BFE;
+    font-size: 25px;
+}
+
+.signup-btn1 {
+    color: #1BA94C;
+    background-color: #FFFFFF;
+    border: solid 2px #1BA94C;
+    padding: 10px 40px;
+    margin: 5px 10px 30px 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.signup-btn2 {
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 10px 40px;
+    margin: 5px 10px 30px 5px;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+
+.signup-btn1:hover {
+    background-color: transparent;
+    border: 2px solid transparent;
+    background-color: #1BA94C;
+    color: #FFFFFF;
+}
+
+.signup-btn2:hover {
+    color: #FFFFFF;
+    background-color: #000;
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .home22-intro h1 {
+        padding: 10px;
+    }
+
+    .signup-btn1,
+    .signup-btn2 {
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home22-intro h1 {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .signup-btn1,
+    .signup-btn2 {
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,278 @@
+footer {
+    background-color: #111b21;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+}
+
+.container1 {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    min-width: 250px;
+    color: #fcf5eb;
+    font-family: poppins;
+    padding: 0 2rem;
+}
+
+.col .logo {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.col h2 {
+    color: #6674cc;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.col h2::after {
+    content: '';
+    background-color: #6674cc;
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+}
+
+.col h2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.col .social a i {
+    color: #6674cc;
+    margin-top: 2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+
+.col .social a i:hover {
+    transform: scale(1.5);
+    filter: grayscale(25);
+}
+
+.col .links a {
+    display: block;
+    text-decoration: none;
+    color: #fcf5eb;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.col .links a::before {
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #6674cc;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.col .links a:hover::before {
+    opacity: 1;
+}
+
+.col .links a:hover {
+    transform: translateX(-8px);
+    color: #6674cc;
+}
+
+.col .contact-details {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.col .contact-details i {
+    margin-right: 15px;
+}
+
+.row .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.row .form input {
+    background-color: #1a1c20ff;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form button {
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #6674cc;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+#contact {
+    margin-top: -68px;
+}
+
+.hr1 {
+    background-color: #6674cc;
+    height: 4px;
+    margin: 10px 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#copyright {
+    text-align: center; 
+    font-size: 16px; 
+    color:#6674cc; 
+    margin-top: 20px; 
+    margin-bottom: -30px;
+  }
+  
+  #copyright a{
+    color: #6674cc;
+    text-decoration: none;
+  }
+
+  #copyright a:hover
+  {
+    text-decoration:underline;
+  }
+
+  /* Existing styles... */
+
+/* Add a hover effect to the social media icons */
+.col .social a i:hover {
+    transform: scale(1.5);
+    filter: grayscale(25);
+}
+
+/* Style the form input and button */
+.row .form input {
+    background-color: #1a1c20ff;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff; /* Added text color */
+    width: 70%; /* Adjust the width to your preference */
+}
+
+.form button {
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #6674cc;
+    color: #fff; /* Added text color */
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+/* Add a subtle transition effect to the button */
+.form button:hover {
+    background-color: #556abf; /* Darken the color on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Style the hr element */
+.hr1 {
+    background-color: #6674cc;
+    height: 4px;
+    margin: 10px 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Style the copyright text */
+#copyright {
+    text-align: center; 
+    font-size: 16px; 
+    color: #6674cc; 
+    margin-top: 20px; 
+    margin-bottom: 20px; /* Adjust margin for spacing */
+}
+
+#copyright a {
+    color: #6674cc;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
+}
+
+
+/* Existing styles... */
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    /* Center align the "Contact" section on smaller screens */
+    #contact {
+        text-align: center;
+    }
+
+    /* Add margin to the "Contact" section for spacing */
+    #contact .contact-details {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,215 @@
+.navbar {
+    background: #050C1B linear-gradient(90deg, #050C1B, #1A4055 15%, #1A4055 35%, #050C1B 50%);
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 120px 3px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.separator {
+    padding: 0 0 0 15px;
+    color: #abb8c3;
+}
+
+.logo img {
+    border: solid 2px transparent;
+    border-radius: 50%;
+}
+
+.navbar a {
+    color: #abb8c3;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+#angle {
+    padding-left: 20px;
+    color: #abb8c3;
+    font-size: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px;
+    position: relative;
+}
+
+
+.links1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links1 a {
+    text-decoration: none;
+    color: #333;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: background-color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.links1 a:hover {
+    color: #6674cc;
+}
+
+
+.logo a {
+    text-decoration: underline;
+    font-size: 30px;
+    color: #6674cc;
+    font-weight: 900;
+}
+
+.signup-button {
+    text-align: center;
+}
+
+.signup-btn {
+    margin-left: 17px;
+    padding: 10px 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#demo {
+    text-decoration: none;
+    color: #050C1B;
+}
+
+#demo:hover {
+    color: #576871;
+}
+
+.signup-btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup-btn:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: transparent;
+}
+
+.mega-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.mega-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.mega-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mega-dropdown li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mega-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.mega-dropdown a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.mega-dropdown a:hover {
+    color: #000;
+}
+
+.mega-dropdown-container:hover .mega-dropdown {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 30px;
+        padding: 10px 10px 3px 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 20px;
+        padding: 5px 5px 2px 5px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 30px;
+        padding: 10px 10px 3px 10px;
+    }
+
+    /* Hide the links and show the hamburger icon */
+    .links1 {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
+/* Style for the FontAwesome icon */
+#menu-toggle {
+    font-size: 24px;
+    color: #abb8c3;
+    cursor: pointer;
+}
